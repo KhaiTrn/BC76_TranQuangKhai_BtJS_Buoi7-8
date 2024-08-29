@@ -18,7 +18,7 @@ document.getElementById("tinhTong").onclick = function () {
 //Bài 2
 document.getElementById("demSo").onclick = function () {
   let total = 0;
-  for (let i = 0; i < arrSoN.length; i++) {
+  for (let i = 0; i <= arrSoN.length; i++) {
     total = i;
   }
   document.getElementById("ketQua2").innerHTML = `Số dương : ${total} `;
