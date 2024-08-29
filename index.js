@@ -11,7 +11,9 @@ document.getElementById("themSo").onclick = function () {
 document.getElementById("tinhTong").onclick = function () {
   let total = 0;
   for (let i = 0; i < arrSoN.length; i++) {
-    total += arrSoN[i];
+    if (arrSoN[i] >= 0) {
+      total += arrSoN[i];
+    }
   }
   document.getElementById("ketQua1").innerHTML = `Tổng số dương là : ${total} `;
 };
@@ -19,7 +21,9 @@ document.getElementById("tinhTong").onclick = function () {
 document.getElementById("demSo").onclick = function () {
   let total = 0;
   for (let i = 0; i <= arrSoN.length; i++) {
-    total = i;
+    if (arrSoN[i] >= 0) {
+      total = i;
+    }
   }
   document.getElementById("ketQua2").innerHTML = `Số dương : ${total} `;
 };
