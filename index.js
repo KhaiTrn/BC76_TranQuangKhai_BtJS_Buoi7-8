@@ -63,7 +63,7 @@ document.getElementById("timSoDuongNhoNhat").onclick = function () {
 document.getElementById("timSoChan").onclick = function () {
   let total = 0;
   for (let i = 0; i < arrSoN.length; i++) {
-    if (arrSoN[i] % 2 == 0) {
+    if (arrSoN[i] % 2 === 0) {
       total = arrSoN[i];
     }
   }
