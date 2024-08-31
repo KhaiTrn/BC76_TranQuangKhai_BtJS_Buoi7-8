@@ -2,13 +2,10 @@ let arrSoN = [];
 document.getElementById("ketQua").innerHTML = `${arrSoN}`;
 
 // bài đầu
-document.getElementById("nhapSo").onsubmit = function (event) {
-  event.preventDefault();
+document.getElementById("nhapSoN").onclick = function () {
   let soN = document.getElementById("nhapSoN").value * 1;
-
   arrSoN.push(soN);
   document.getElementById("ketQua").innerHTML = arrSoN;
-  event.target.reset();
 };
 // bài 1
 document.getElementById("tinhTong").onclick = function () {
@@ -102,16 +99,20 @@ function kiemTraSoNguyenTo(Number) {
   return true;
 }
 document.getElementById("timSoNguyenTo").onclick = function () {
-  let total = [];
+  let total = 0;
   for (let i = 0; i < arrSoN.length; i++) {
     if (kiemTraSoNguyenTo(arrSoN[i]) == true) {
-      total.push(arrSoN[i]);
+      total = arrSoN[i];
       break;
     }
   }
-  document.getElementById(
-    "ketQua8"
-  ).innerHTML = `Số nguyên tố đầu tiên là :${total}`;
+  if (total == []) {
+    document.getElementById("ketQua8").innerHTML = `Không có số nguyên tố`;
+  } else {
+    document.getElementById(
+      "ketQua8"
+    ).innerHTML = `Số nguyên tố đầu tiên là :${total}`;
+  }
 };
 //Bài tập 9
 let newArrSoThuc = [];
