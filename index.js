@@ -2,10 +2,13 @@ let arrSoN = [];
 document.getElementById("ketQua").innerHTML = `${arrSoN}`;
 
 // bài đầu
-document.getElementById("themSo").onclick = function () {
+document.getElementById("nhapSo").onsubmit = function (event) {
+  event.preventDefault();
   let soN = document.getElementById("nhapSoN").value * 1;
+
   arrSoN.push(soN);
   document.getElementById("ketQua").innerHTML = arrSoN;
+  event.target.reset();
 };
 // bài 1
 document.getElementById("tinhTong").onclick = function () {
@@ -21,8 +24,8 @@ document.getElementById("tinhTong").onclick = function () {
 document.getElementById("demSo").onclick = function () {
   let total = 0;
   for (let i = 0; i <= arrSoN.length; i++) {
-    if (arrSoN[i] >= 0) {
-      total = i;
+    if (arrSoN[i] > 0) {
+      total++;
     }
   }
   document.getElementById("ketQua2").innerHTML = `Số dương : ${total} `;
@@ -38,7 +41,7 @@ document.getElementById("timSoNhoNhat").onclick = function () {
 document.getElementById("timSoDuongNhoNhat").onclick = function () {
   let newArrSoN = [];
   for (let i = 0; i < arrSoN.length; i++) {
-    if (arrSoN[i] >= 0) {
+    if (arrSoN[i] > 0) {
       newArrSoN.push(arrSoN[i]);
     }
   }

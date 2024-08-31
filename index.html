@@ -22,24 +22,29 @@
     <div class="container">
       <div class="header">
         <h1 class="text-center">Bài tập Mảng</h1>
-        <div class="mb-3">
-          <label for="" class="form-label">Nhập Số Nguyên</label>
-          <input
-            type="number"
-            class="form-control"
-            name=""
-            id="nhapSoN"
-            aria-describedby="helpId"
-            placeholder="nhập số n"
-          />
-        </div>
-        <button class="btn btn-primary" id="themSo">Thêm số</button>
+        <form id="nhapSo">
+          <div class="mb-3">
+            <label for="" class="form-label">Nhập Số Nguyên</label>
+            <input
+              type="number"
+              class="form-control"
+              name=""
+              id="nhapSoN"
+              aria-describedby="helpId"
+              placeholder="nhập số n"
+            />
+          </div>
+        </form>
+        <button type="submit" class="btn btn-primary" id="themSo">
+          Thêm số
+        </button>
         <div id="ketQua" class="alert-success alert my-4"></div>
       </div>
       <div class="accordion" id="accordionExample">
         <div class="accordion-item Baitap1">
           <h2 class="accordion-header">
             <button
+              type="button"
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
@@ -56,7 +61,9 @@
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <button class="btn btn-primary" id="tinhTong">Tính Tổng</button>
+              <button type="button" class="btn btn-primary" id="tinhTong">
+                Tính Tổng
+              </button>
               <div id="ketQua1" class="alert-success alert my-3"></div>
             </div>
           </div>
@@ -64,6 +71,7 @@
         <div class="accordion-item Baitap2">
           <h2 class="accordion-header">
             <button
+              type="button"
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
@@ -80,7 +88,9 @@
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <button class="btn btn-primary" id="demSo">Đếm Số</button>
+              <button type="button" class="btn btn-primary" id="demSo">
+                Đếm Số
+              </button>
               <div id="ketQua2" class="alert-success alert my-3"></div>
             </div>
           </div>
@@ -88,6 +98,7 @@
         <div class="accordion-item Baitap3">
           <h2 class="accordion-header">
             <button
+              type="button"
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
@@ -104,7 +115,7 @@
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <button class="btn btn-primary" id="timSoNhoNhat">
+              <button type="button" class="btn btn-primary" id="timSoNhoNhat">
                 Tìm số nhỏ nhất
               </button>
               <div id="ketQua3" class="alert-success alert my-3"></div>
@@ -114,6 +125,7 @@
         <div class="accordion-item Baitap4">
           <h2 class="accordion-header">
             <button
+              type="button"
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
@@ -130,7 +142,11 @@
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <button class="btn btn-primary" id="timSoDuongNhoNhat">
+              <button
+                type="button"
+                class="btn btn-primary"
+                id="timSoDuongNhoNhat"
+              >
                 Tìm số dương nhỏ nhất
               </button>
               <div id="ketQua4" class="alert-success alert my-3"></div>
@@ -140,6 +156,7 @@
         <div class="accordion-item Baitap5">
           <h2 class="accordion-header">
             <button
+              type="button"
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
@@ -156,7 +173,7 @@
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <button class="btn btn-primary" id="timSoChan">
+              <button type="button" class="btn btn-primary" id="timSoChan">
                 Tìm số chẵn
               </button>
               <div id="ketQua5" class="alert-success alert my-3"></div>
@@ -166,6 +183,7 @@
         <div class="accordion-item Baitap6">
           <h2 class="accordion-header">
             <button
+              type="button"
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
@@ -204,7 +222,9 @@
                   placeholder="Nhập số vị trí 2"
                 />
               </div>
-              <button class="btn btn-primary" id="doiCho">Đổi chỗ</button>
+              <button type="button" class="btn btn-primary" id="doiCho">
+                Đổi chỗ
+              </button>
               <div id="ketQua6" class="alert-success alert my-3"></div>
             </div>
           </div>
@@ -212,6 +232,7 @@
         <div class="accordion-item Baitap7">
           <h2 class="accordion-header">
             <button
+              type="button"
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
@@ -228,7 +249,9 @@
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <button class="btn btn-primary" id="sapXep">Sắp xếp</button>
+              <button type="button" class="btn btn-primary" id="sapXep">
+                Sắp xếp
+              </button>
               <div id="ketQua7" class="alert-success alert my-3"></div>
             </div>
           </div>
@@ -236,6 +259,7 @@
         <div class="accordion-item Baitap8">
           <h2 class="accordion-header">
             <button
+              type="button"
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
@@ -252,7 +276,7 @@
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <button class="btn btn-primary" id="timSoNguyenTo">
+              <button type="button" class="btn btn-primary" id="timSoNguyenTo">
                 Tìm số nguyên tố
               </button>
               <div id="ketQua8" class="alert-success alert my-3"></div>
@@ -262,6 +286,7 @@
         <div class="accordion-item Baitap9">
           <h2 class="accordion-header">
             <button
+              type="button"
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
@@ -290,9 +315,11 @@
                 />
               </div>
 
-              <button class="btn btn-primary" id="themSoThuc">Thêm Số</button>
+              <button type="button" class="btn btn-primary" id="themSoThuc">
+                Thêm Số
+              </button>
               <div id="soThuc" class="alert-success alert my-3"></div>
-              <button class="btn btn-primary" id="demSoNguyen">
+              <button type="button" class="btn btn-primary" id="demSoNguyen">
                 Đếm số nguyên
               </button>
 
@@ -303,6 +330,7 @@
         <div class="accordion-item Baitap10">
           <h2 class="accordion-header">
             <button
+              type="button"
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
@@ -319,7 +347,9 @@
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <button class="btn btn-primary" id="soSanh">So sánh</button>
+              <button type="button" class="btn btn-primary" id="soSanh">
+                So sánh
+              </button>
               <div id="ketQua10" class="alert-success alert my-3"></div>
             </div>
           </div>
