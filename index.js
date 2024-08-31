@@ -1,8 +1,6 @@
 let arrSoN = [];
-document.getElementById("ketQua").innerHTML = `${arrSoN}`;
-
 // bài đầu
-document.getElementById("nhapSoN").onclick = function () {
+document.getElementById("themSo").onclick = function () {
   let soN = document.getElementById("nhapSoN").value * 1;
   arrSoN.push(soN);
   document.getElementById("ketQua").innerHTML = arrSoN;
